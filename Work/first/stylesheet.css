@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 1px;
+}
+body {
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: red;
+}
+body div {
+    border: 1px solid black;
+    text-align: center;
+}
+#header.default {
+    height:  200px;
+    padding-top: 20px;
+    margin-bottom: 1px;
+    background: no-repeat url(fon.jpg) 50% 20%;
+}
+#header.scroll {
+    height:  200px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+#menu.default
+{
+    height:  50px;
+    margin-bottom: 1px;
+    background: lightsteelblue;
+}
+#menu.scroll
+{
+    position: fixed ;
+    top:0; left:0;
+    height:  50px;
+    width: 100%;
+    margin-bottom: 50px;
+    background: lightsteelblue;
+}
+.menu li
+{
+    display: inline-block;
+}
+
+.main {
+    display: flex ;
+    margin-bottom: 1px;
+    height: 800px;
+    border: none;
+}
+
+.left-column ,.right-column
+{
+    width: 15%;
+}
+.middle-column
+{   border: none;
+    width: 70%;
+}
+.footer {
+    height: 50px;
+    background: lightsteelblue;
+}
+.tfooter{
+
+    vertical-align: middle;
+    font-size: 15px;
+}
+.vk {
+    display: inline-block;
+    background: no-repeat url(first/vk.jpg) ;
+    height : 20px;
+    width: 20px;
+}
