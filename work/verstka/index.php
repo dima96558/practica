@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="stylesheet.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script src="script.js" type="text/javascript"></script>
-	<title>Maximaster</title>
+	<title>Maximasterfirst</title>
 </head>
 <body>	
 <div id="header" class="default">
@@ -14,8 +14,9 @@
 <div id="menu" class="default">
 	<ul class="menu">
 		<?php
-		if ($_SERVER[REQUEST_URI]=="/") {
-			echo '<li><a href="http://ivanchikov.bitrix.develop.maximaster.ru/index.php">Главная</a></li>' ;
+		if (getUrl()=="http://ivanchikov.bitrix.develop.maximaster.ru/work/verstka/index.php") {  ; }
+		else {
+			echo '<li><a href="http://ivanchikov.bitrix.develop.maximaster.ru/work/verstka/index.php">Главная</a></li>';
 		}?>
 		<li><a href="#">О себе</a></li>
 		<li><a href="#">Контакты</a></li>
