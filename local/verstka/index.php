@@ -14,9 +14,9 @@
 <div id="menu" class="default">
 	<ul class="menu">
 		<?php
-		if (getUrl()=="http://ivanchikov.bitrix.develop.maximaster.ru/work/verstka/index.php") {  ; }
+		if (getUrl()=="http://ivanchikov.bitrix.develop.work.ru/work/verstka/index.php") {  ; }
 		else {
-			echo '<li><a href="http://ivanchikov.bitrix.develop.maximaster.ru/work/verstka/index.php">Главная</a></li>';
+			echo '<li><a href="http://ivanchikov.bitrix.develop.work.ru/work/verstka/index.php">Главная</a></li>';
 		}?>
 		<li><a href="#">О себе</a></li>
 		<li><a href="#">Контакты</a></li>
