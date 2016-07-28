@@ -1,4 +1,3 @@
-<?
 $aMenuLinks = Array(
 	Array(
 		"Новости",
