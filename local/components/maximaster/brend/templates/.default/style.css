@@ -1,0 +1,28 @@
+
+.right-column .menu
+{
+    font-size:100%;
+    margin-top: 5px;
+    border : 3px solid #C4D1FF;
+}
+
+.right-column .link
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+
+}
+
+.right-column a
+{
+
+}
+.right-column
+{
+    width: 15%;
+    background-color: #D4DDFA;
+    padding-left : 5px;
+    padding-right : 5px;
+
+}

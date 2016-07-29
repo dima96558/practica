@@ -18,6 +18,14 @@ $APPLICATION->SetTitle($arResult["SECTION"]["NAME"]);
         </div>
 </div>
 
+<?
+$APPLICATION->IncludeComponent("maximaster:brend", "",
+    array(
+        "BREND_ID" => $arResult["BREND"]
+    ),
+    false
+); ?>
+
 <script>
     jQuery(function(){
 

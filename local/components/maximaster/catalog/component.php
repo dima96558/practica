@@ -33,6 +33,7 @@
     while ($ob = $res->Fetch()) {
         $arResult["ELEMENT"][$i]["NAME"] = $ob['NAME'];
         $arResult["ELEMENT"][$i]["ID"] = $ob['ID'];
+        $arResult["BREND"][$ob['ID']] = $ob['ID'];
         $arResult["ELEMENT"][$i]["PICTURE"] = $ob['PREVIEW_PICTURE'];
         $arResult["ELEMENT"][$i]["TEXT"] = $ob['PREVIEW_TEXT'];
         $arResult["ELEMENT"][$i]["PRICE"] = $ob['PROPERTY_PRICE_VALUE'];

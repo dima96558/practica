@@ -29,6 +29,7 @@
           $arResult["ELEMENT"]["NAME"] = $ob['NAME'];
           $arResult["ELEMENT"]["PICTURE"] = $ob['DETAIL_PICTURE'];
           $arResult["ELEMENT"]["PRICE"] = $ob['PROPERTY_PRICE_VALUE'];
+          $arResult["BREND"][$ob['ID']] = $ob['ID'];
           $arResult["ELEMENT"]["COUNTRY"] = $ob['PROPERTY_COUNTRY_VALUE'];
           $arResult["ELEMENT"]["NUMBER"] = $ob['PROPERTY_NUMBER_VALUE'];
           $arResult["ELEMENT"]["BREND"] = $ob['PROPERTY_BREND_NAME'];

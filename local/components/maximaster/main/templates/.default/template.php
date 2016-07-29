@@ -5,7 +5,7 @@ $APPLICATION->SetTitle($arResult["SECTION"]["NAME"]);
 <?if (!empty($arResult)):?>
 <div class="catalog">
     <?foreach($arResult["ELEMENT"] as $arItem):?>
-        <? $ID =$arItem["ID"]?>
+        <? $ID =$arItem["ID"] ; ?>
             <a  href="http://ivanchikov.bitrix.develop.maximaster.ru/catalog/element.php?ELEMENT_ID=<?=$ID?>">
            <div class="flex-cont ">
             <div class="flex-block left-block">
@@ -21,3 +21,12 @@ $APPLICATION->SetTitle($arResult["SECTION"]["NAME"]);
     <?endforeach?>
 </div>
 <?endif?>
+
+
+<?
+$APPLICATION->IncludeComponent("maximaster:brend", "",
+    array(
+         "BREND_ID" => $arResult[1]
+    ),
+    false
+); ?>

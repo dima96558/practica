@@ -31,3 +31,12 @@ $APPLICATION->SetTitle($arResult["SECTION"]["NAME"]);
     <?endforeach?>
 </div>
 <?endif?>
+
+
+<?
+$APPLICATION->IncludeComponent("maximaster:brend", "",
+    array(
+        "BREND_ID" => $arResult["BREND"]
+    ),
+    false
+); ?>

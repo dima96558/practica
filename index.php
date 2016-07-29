@@ -7,8 +7,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 <?
 $APPLICATION->IncludeComponent("maximaster:main", "",
     array(
-        "IBLOCK_ID" => 4
-    ),
+        "IBLOCK_ID" => 4),
     false
 );?>
 

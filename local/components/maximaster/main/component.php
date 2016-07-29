@@ -1,7 +1,6 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
   if (CModule::IncludeModule("iblock")) {
-    $arrResult["ELEMENT"] = array();
       
         $arFilter = Array(
             "IBLOCK_ID" => $arParams["IBLOCK_ID"]
@@ -29,7 +28,7 @@
         $arResult["ELEMENT"][$i]["PICTURE"] = $ob['PREVIEW_PICTURE'];
         $arResult["ELEMENT"][$i]["TEXT"] = $ob['PREVIEW_TEXT'];
         $arResult["ELEMENT"][$i]["PRICE"] = $ob['PROPERTY_PRICE_VALUE'];
-        $i++ ;
+        $i++;
     }
 }
 $this->IncludeComponentTemplate();
