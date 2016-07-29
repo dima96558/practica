@@ -14,8 +14,10 @@
 
 }
 
-.right-column a
+.right-column .menu-text
 {
+list-style: none;
+    padding: 0;
 
 }
 .right-column

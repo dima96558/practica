@@ -7,7 +7,8 @@ if (CModule::IncludeModule("iblock")) {
     );
     $arSelect = Array(
         "ID",
-        "PROPERTY_BREND.NAME"
+        "PROPERTY_BREND.NAME",
+        "PROPERTY_BREND"
     );
     $res = CIBlockElement::GetList(
         Array(),
@@ -16,7 +17,8 @@ if (CModule::IncludeModule("iblock")) {
         false,
         $arSelect);
     while ($ob = $res->Fetch()) {
-        $arResult[$ob['PROPERTY_BREND_NAME']] = $ob['PROPERTY_BREND_NAME'];
+        $arResult[$ob['PROPERTY_BREND_NAME']]["NAME"] = $ob['PROPERTY_BREND_NAME'];
+        $arResult[$ob['PROPERTY_BREND_NAME']]["ID"] = $ob['PROPERTY_BREND_VALUE'];
     }
 }
 $this->IncludeComponentTemplate();

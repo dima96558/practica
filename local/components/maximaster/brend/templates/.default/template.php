@@ -9,9 +9,13 @@ $APPLICATION->SetTitle();
 <div class="right-column">
     <h3> Список брендов  <h3>
             <div class="menu">
+            <ul class="menu-text">
             <?foreach($arResult as $arItem):?>
-               <div class="link"> <a  href="http://ivanchikov.bitrix.develop.maximaster.ru/"> <?echo $arItem?> </a> </div>
+                <? $ID =$arItem["ID"]?>
+               <li class="link"> <a  href="http://ivanchikov.bitrix.develop.maximaster.ru/catalog/index.php?BREND_ID=<?=$ID?>"> <?echo $arItem["NAME"]?> </a> </li>
             <?endforeach?>
+                </ul>
                 </div>
 </div>
 </div>
+    

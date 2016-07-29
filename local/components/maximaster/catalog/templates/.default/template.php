@@ -14,7 +14,8 @@ $APPLICATION->SetTitle($arResult["SECTION"]["NAME"]);
             </div>
         </div>
     <?endif?>
-    <?foreach($arResult["ELEMENT"] as $arItem):?>
+    <?  foreach($arResult["ELEMENT"] as $arItem):?>
+
         <? $ID =$arItem["ID"]?>
             <a  href="http://ivanchikov.bitrix.develop.maximaster.ru/catalog/element.php?ELEMENT_ID=<?=$ID?>">
            <div class="flex-cont ">
@@ -28,7 +29,8 @@ $APPLICATION->SetTitle($arResult["SECTION"]["NAME"]);
             </div>
         </div>
        </a>
-    <?endforeach?>
+
+    <?endforeach  ?>
 </div>
 <?endif?>
 

@@ -5,8 +5,22 @@
 
 .element .text {
     width: 100%;
+    border: none    ;
+    display : flex;
+    flex-direction: column;
 }
 
+
+.element .text-text
+{
+    height : 100%;
+}
+
+.element button
+{
+    height: 70px;
+    width: 100%;
+}
 .element h3{
     font-size: 1.25em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
