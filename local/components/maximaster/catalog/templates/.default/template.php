@@ -38,7 +38,8 @@ $APPLICATION->SetTitle($arResult["SECTION"]["NAME"]);
 <?
 $APPLICATION->IncludeComponent("maximaster:brend", "",
     array(
-        "BREND_ID" => $arResult["BREND"]
+        "BREND_ID" => $arResult["BREND"],
+        "SECTION_ID" => $arResult["SECTION_ID"],
     ),
     false
-); ?>
+);?>

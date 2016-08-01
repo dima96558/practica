@@ -28,5 +28,5 @@ $APPLICATION->IncludeComponent("maximaster:brend", "",
     array(
          "BREND_ID" => $arResult[1]
     ),
-    false
+    false   
 ); ?>

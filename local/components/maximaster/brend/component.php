@@ -14,11 +14,12 @@ if (CModule::IncludeModule("iblock")) {
         Array(),
         $arFilter,
         false,
-        false,
+        false,  
         $arSelect);
     while ($ob = $res->Fetch()) {
         $arResult[$ob['PROPERTY_BREND_NAME']]["NAME"] = $ob['PROPERTY_BREND_NAME'];
         $arResult[$ob['PROPERTY_BREND_NAME']]["ID"] = $ob['PROPERTY_BREND_VALUE'];
     }
+    $arResult["SECTION_ID"] = $arParams["SECTION_ID"];
 }
 $this->IncludeComponentTemplate();
