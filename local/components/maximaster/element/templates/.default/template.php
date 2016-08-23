@@ -18,7 +18,7 @@ $APPLICATION->SetTitle($arResult["SECTION"]["NAME"]);
                 <h3><?echo $arResult["ELEMENT"]["TEXT"]?></h3>
                 </div>
                 <div>
-                <button>  Купить </button>
+                <button class="ajax-sale" id="<?echo $arResult["ELEMENT"]["ID"]?>">  Купить </button>
                 </div>    
             </div>
         </div>

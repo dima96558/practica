@@ -37,7 +37,12 @@
             $arResult["BREND"][$ob['ID']] = $ob['ID'];
             $arResult["ELEMENT"][$i]["PICTURE"] = $ob['PREVIEW_PICTURE'];
             $arResult["ELEMENT"][$i]["TEXT"] = $ob['PREVIEW_TEXT'];
-            $arResult["ELEMENT"][$i]["PRICE"] = $ob['PROPERTY_PRICE_VALUE'];
+            $ress = \CPrice::GetList([],[
+                    "PRODUCT_ID" => $ob['ID']]
+            );
+            if ($obb = $ress->Fetch()) {
+                $arResult["ELEMENT"][$i]["PRICE"] = $obb['PRICE'];
+            }
             $i++;
         }
     }
@@ -74,7 +79,12 @@
             $arResult["BREND"][$ob['ID']] = $ob['ID'];
             $arResult["ELEMENT"][$i]["PICTURE"] = $ob['PREVIEW_PICTURE'];
             $arResult["ELEMENT"][$i]["TEXT"] = $ob['PREVIEW_TEXT'];
-            $arResult["ELEMENT"][$i]["PRICE"] = $ob['PROPERTY_PRICE_VALUE'];
+            $ress = \CPrice::GetList([],[
+                    "PRODUCT_ID" => $ob['ID']]
+            );
+            if ($obb = $ress->Fetch()) {
+                $arResult["ELEMENT"][$i]["PRICE"] = $obb['PRICE'];
+            }
             $i++;
         }
     }
@@ -104,7 +114,12 @@
               $arResult["BREND"][$ob['ID']] = $ob['ID'];
               $arResult["ELEMENT"][$i]["PICTURE"] = $ob['PREVIEW_PICTURE'];
               $arResult["ELEMENT"][$i]["TEXT"] = $ob['PREVIEW_TEXT'];
-              $arResult["ELEMENT"][$i]["PRICE"] = $ob['PROPERTY_PRICE_VALUE'];
+              $ress = \CPrice::GetList([],[
+                      "PRODUCT_ID" => $ob['ID']]
+              );
+              if ($obb = $ress->Fetch()) {
+                  $arResult["ELEMENT"][$i]["PRICE"] = $obb['PRICE'];
+              }
               $i++;
           }
       }
