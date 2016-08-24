@@ -13,11 +13,9 @@
           "IBLOCK_ID",
           "NAME",
           "DETAIL_PICTURE",
-          "PROPERTY_NUMBER",
           "DETAIL_TEXT",
           "PROPERTY_COUNTRY",
-          "PROPERTY_BREND.NAME",
-          "PROPERTY_PRICE"
+          "PROPERTY_BREND.NAME"
       );
       $res = CIBlockElement::GetList(
           Array(),
