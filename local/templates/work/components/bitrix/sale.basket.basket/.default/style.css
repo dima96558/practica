@@ -213,8 +213,6 @@
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
 			box-sizing:border-box;
-	margin:20px auto 0;
-	padding:0 20px;
 }
 .bx_ordercart .bx_ordercart_order_pay_right{
 	float:left;
@@ -327,7 +325,6 @@
 .bx_ordercart .bx_ordercart_order_sum tr td.custom_t2{white-space:nowrap;}
 .bx_ordercart .bx_ordercart_order_sum tr td.fwb{font-weight:bold;}
 .bx_ordercart .bx_ordercart_order_pay_center{
-	margin-top:20px;
 	padding-top:20px;
 	border-top:1px solid #e4e6e8;
 	text-align:center;
@@ -341,6 +338,7 @@
 	margin:0 30px;
 	font-weight:bold;
 	font-size:17px;
+
 }
 .bx_ordercart .bx_ordercart_order_pay_center .checkout{
 	position:relative;

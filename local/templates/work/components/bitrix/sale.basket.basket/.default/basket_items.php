@@ -429,7 +429,8 @@ if ($normalCount > 0):
 	<input type="hidden" id="hide_coupon" value="<?=($arParams["HIDE_COUPON"] == "Y") ? "Y" : "N"?>" />
 	<input type="hidden" id="use_prepayment" value="<?=($arParams["USE_PREPAYMENT"] == "Y") ? "Y" : "N"?>" />
 	<input type="hidden" id="auto_calculation" value="<?=($arParams["AUTO_CALCULATION"] == "N") ? "N" : "Y"?>" />
-	
+
+
 		<?
 		if ($arParams["HIDE_COUPON"] != "Y")
 		{
@@ -467,7 +468,6 @@ if ($normalCount > 0):
 			?>&nbsp;<?
 		}
 ?>
-		</div>
 		<div class="bx_ordercart_order_pay_right">
 			<table class="bx_ordercart_order_sum">
 				<?if ($bWeightColumn && floatval($arResult['allWeight']) > 0):?>
@@ -527,7 +527,6 @@ if ($normalCount > 0):
 			?>
 			<a href="javascript:void(0)" onclick="checkOut();" class="checkout"><?=GetMessage("SALE_ORDER")?></a>
 		</div>
-	</div>
 </div>
 <?
 else:
