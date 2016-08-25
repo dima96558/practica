@@ -35,7 +35,6 @@ if (CModule::IncludeModule("sale") && CModule::IncludeModule("catalog")) {
             "LID" => s1,
             "NAME" => $arResult["NAME"],
         );
-
         CSaleBasket::Add($arFields);
     }
 

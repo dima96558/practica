@@ -1,12 +1,20 @@
 .b-image{
-    background: no-repeat 50% 50% url(корзина.jpg) ;
-    height : 20px;
-    width: 20px;
+    background:  url(/local/images/basket.jpg);
+    height : 40px;
+    width: 40px;
     display: inline-block;
 }
 
 .mbasket
 {
-
+    border: none;
+    position: relative;
+    top: 13px;
     display : flex;
+    flex-direction: row;
+}
+
+.basket-text{
+    margin-top: 3px;
+    border:none;
 }
